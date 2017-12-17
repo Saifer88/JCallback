@@ -13,13 +13,7 @@ With this tool you can download and, with Lambda, work on remote resources
 
 ## Use it
 
-You can clone the repository and build with Maven
-
-```sh
-$ mvn install
-```
-
-The jar will be created and you can include it in your project
+You can find the last version of the .jar to include in your project in the [Release page](https://github.com/Saifer88/JCallback/releases)
 
 
 
