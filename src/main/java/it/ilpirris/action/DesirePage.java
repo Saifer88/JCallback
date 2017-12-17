@@ -1,6 +1,6 @@
 package it.ilpirris.action;
 
-public interface Desire {
+public interface DesirePage {
 
     void fulfill(String html);
 }

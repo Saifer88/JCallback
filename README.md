@@ -1,4 +1,4 @@
-# After Download - Download and work on web resources
+# JCallback - Download and work on web resources
 
 
 
@@ -28,16 +28,33 @@ The jar will be created and you can include it in your project
 
 ## Example
 
+
+Some examples here, just put the address and manage the result
+when it is ready.
+
+
 ```java
-        ConnectionProvider.asynchronousGet(
-                "https://www.google.it",
-                 html -> System.out.println("The page you looked for is long: " + html.length())
-        );
-    
-        ConnectionProvider.get(
-                "https://www.google.it",
-                 html -> System.out.println("The page you looked for is long: " + html.length())
-        );
+
+JCallback.asyncGet(
+        "https://www.google.it", 
+        (String page) -> System.out.println(page));
+
+//or cuter
+JCallback.asyncGet(
+        "https://www.google.it", System.out::println);
+
+
+
+
+JCallback.asyncDownload(
+        "http://testMe.com/5MB.zip",
+        (File file) -> System.out.println(file.getName()));
+
+//or cuter
+JCallback.asyncDownload(
+        "http://testMe.com/5MB.zip",
+        file -> System.out.println(file.getName()));
+
 
 
 ```

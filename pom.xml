@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>it.ilpirris</groupId>
-  <artifactId>afterdownload</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <artifactId>jcallback</artifactId>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>After_Download</name>
+  <name>JCallback</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
